@@ -1,5 +1,5 @@
 
-# react-store-context
+# react-global-context-store
 
 Manage global state for your React app using Context api
 
@@ -9,14 +9,14 @@ Required React Version: > **16.9**
 
   
 
-**Install react-store-context **
+**Install react-global-context-store **
 
 ```
 // Using yarn
-$ yarn i react-store-context --save
+$ yarn i react-global-context-store --save
 
 // Using npm
-$ npm install react-store-context --save
+$ npm install react-global-context-store --save
 
 ```
 
@@ -28,7 +28,7 @@ Initialize Store Context
 
 import React from 'react'
 
-import { StoreProvider } from "react-store-context";
+import { StoreProvider } from "react-global-context-store";
 
 import Counter from './Counter'
 
@@ -69,7 +69,7 @@ ReactDOM.render(<App />, rootElement);
 
 ```
 import  React,  { useContext  }  from  "react";
-import  StoreContext  from  "react-store-context";
+import  StoreContext  from  "react-global-context-store";
 
 function  Counter()  {
 	let  [state, dispatch] =  useContext(MyContext);

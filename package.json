@@ -1,5 +1,5 @@
 {
-  "name": "react-context-store",
+  "name": "react-global-context-store",
   "version": "1.0.0",
   "description": "Global state for your React app using Context api",
   "main": "src/context-store.js",
