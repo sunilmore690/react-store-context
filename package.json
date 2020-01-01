@@ -1,8 +1,8 @@
 {
-  "name": "react-store-context",
+  "name": "react-context-store",
   "version": "1.0.0",
   "description": "Global state for your React app using Context api",
-  "main": "src/store-context.js",
+  "main": "src/context-store.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
