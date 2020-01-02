@@ -86,12 +86,14 @@ export  default  Counter;
  
 ```
 
+### connect
+
 react-global-store-context provides a connect function for you to connect your component to the store.
 
 Normally, you’ll call connect in this way:
 
 ```
-import { connect } from 'react-redux'
+import { connect } from 'react-global-context-store'
 import { increment, decrement } from './actionCreators'
 
 // const Counter = ...
