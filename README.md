@@ -85,9 +85,7 @@ function  Counter()  {
 export  default  Counter;
  
 ```
-
-### connect
-
+#### connect
 react-global-store-context provides a connect function for you to connect your component to the store.
 
 Normally, you’ll call connect in this way:
