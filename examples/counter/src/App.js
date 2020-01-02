@@ -20,7 +20,7 @@ function App() {
   return (
     <div className='App'>
       <StoreProvider reducer={counterReducer} initialState={counter}>
-        <Counter />
+        <Counter myprops='1'/>
       </StoreProvider>
     </div>
   );
