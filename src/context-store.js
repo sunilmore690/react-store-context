@@ -17,7 +17,11 @@ export const connect = function(mapStateToProps, mapDisptachToProps) {
       let actionProps = {};
       Object.keys(mapDisptachToProps).forEach(key => {
         actionProps[key] = function(payload) {
-          dispatch(mapDisptachToProps[key](payload));
+          if (typeof mapDisptachToProps[key]() == "function") {
+            mapDisptachToProps[key](payload)(dispatch);
+          } else {
+            dispatch(mapDisptachToProps[key](payload));
+          }
         };
       });
       let props = mapStateToProps(state, componentProps);

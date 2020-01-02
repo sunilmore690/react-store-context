@@ -111,4 +111,27 @@ export default connect(
 
 
 ```
+
+#### async actions
+
+you can define async actions
+
+```
+const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
+
+function increment() {
+  return {
+    type: INCREMENT_COUNTER,
+  };
+}
+
+function incrementAsync() {
+  return (dispatch) => {
+    setTimeout(() => {
+      // Yay! Can invoke sync or async actions with `dispatch`
+      dispatch(increment());
+    }, 1000);
+  };
+}
+```
 [![Edit react-context-api](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-context-api-cvndq?fontsize=14&hidenavigation=1&theme=dark)
